@@ -1,0 +1,28 @@
+@import "typography.scss";
+@import "colors.scss";
+
+html {
+    font-size: $fontSizeBase;
+
+    @media screen and (max-width:900px) {
+        font-size: $fontSizeSmall;
+    }
+}
+
+body {
+    font-family: $fontFamily;
+    background-image: url("../images/bg-stars.svg"),
+        linear-gradient(90deg, $veryDarkBlue 0%, $veryDarkBlackBlue 100%);
+    font-weight: 700;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    gap: 20px;
+}
